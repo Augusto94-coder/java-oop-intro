@@ -5,13 +5,13 @@ public class Auto {
 
     }
     
-    public String brand;
-    public String model;
-    public String color;
-    public int hp = 0;
-    public int numberOfDoors = 0;
-    public boolean hasStarted;
-    public boolean inWorkshop = false;
+    private String brand;
+    private String model;
+    private String color;
+    private int hp = 0;
+    private int numberOfDoors = 0;
+    private boolean hasStarted;
+    private boolean inWorkshop = false;
 
     public Auto(String brand, String model, String color, int hp, int numberOfDoors){
         this.brand = brand;
@@ -24,15 +24,67 @@ public class Auto {
 
     }
 
-    public void startUp(){
-        hasStarted = true;
+    public String getBrand (){
+        return this.brand;
     }
 
-    public void turnOff(){
-        this.hasStarted = false;
+    public void setBrand ( String brand){
+        if (brand != null)
+         this.brand = brand;
     }
 
-    public void changeHp( int hp ){
-        this.hp = hp;
+
+    public String getModel (){
+        return this.model;
+    }
+
+    public void setModel ( String model){
+        if (model != null)
+         this.model = model;
+    }
+
+    public String getColor (){
+        return this.color;
+    }
+
+    public void setColor (String color){
+        if (color != null)
+         this.color = color;
+    }
+
+    public int getHp (){
+        return this.hp;
+    }
+
+    public void setHp (int hp){
+        if (hp > 0)
+         this.hp = hp;
+    }
+
+    public int getNumberOfDoors ( int numberOfDoors){
+        return this.numberOfDoors;
+    }
+
+    public void setHasStarted ( boolean hasStarted){
+        
+         this.hasStarted = hasStarted;
+    }
+
+    public boolean getInWorkshop (){
+        return this.inWorkshop;
+    }
+
+    public void setInWorkshop ( boolean inWorkshop){
+        
+         this.inWorkshop = inWorkshop;
+    }
+
+    public void startUp (){
+        this.hasStarted = true;
+    }
+
+    public void turnOff (){
+        
+         this.hasStarted = false;
     }
 }

@@ -18,14 +18,27 @@ public class Main {
         alfaGiulia.hp = 180;
         alfaGiulia.numberOfDoors = 5; */
 
-        System.out.println(cinquecento.model);
+        /* System.out.println(cinquecento.model);
         System.out.println(cinquecento.hp);
         System.out.println(alfaGiulia.model);
         System.out.println(alfaGiulia.hp);
 
         cinquecento.changeHp(55);
         System.out.println(cinquecento.hp);
-        System.out.println(alfaGiulia.hp);
+        System.out.println(alfaGiulia.hp); */
+
+        System.out.println(cinquecento.getBrand());
+        System.out.println(cinquecento.getModel());
+        System.out.println(cinquecento.getColor());
+        System.out.println(cinquecento.getHp());
+
+        cinquecento.setColor("Blu elettrico");
+        System.out.println(cinquecento.getColor());
+
+        System.out.println(alfaGiulia.getBrand());
+        System.out.println(alfaGiulia.getModel());
+        System.out.println(alfaGiulia.getColor());
+        System.out.println(alfaGiulia.getHp()); 
         
     }
 }
