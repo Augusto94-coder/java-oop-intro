@@ -1,4 +1,4 @@
-package org.lessons.java.oop;
+package org.lessons.java.oop.Macchina;
 
 public class Main {
     public static void main(String[] args) {
@@ -31,6 +31,7 @@ public class Main {
         System.out.println(cinquecento.getModel());
         System.out.println(cinquecento.getColor());
         System.out.println(cinquecento.getHp());
+        System.out.println(Auto.numberOfWheels);
 
         cinquecento.setColor("Blu elettrico");
         System.out.println(cinquecento.getColor());
@@ -39,6 +40,7 @@ public class Main {
         System.out.println(alfaGiulia.getModel());
         System.out.println(alfaGiulia.getColor());
         System.out.println(alfaGiulia.getHp()); 
+       
         
     }
 }

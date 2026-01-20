@@ -1,9 +1,8 @@
-package org.lessons.java.oop;
+package org.lessons.java.oop.Macchina;
 
 public class Auto {
-    public static void main(String[] args) {
 
-    }
+    protected static int numberOfWheels = 4;
     
     private String brand;
     private String model;
